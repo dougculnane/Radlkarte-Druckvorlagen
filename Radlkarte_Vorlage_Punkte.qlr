@@ -1,0 +1,608 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group name="" expanded="1" checked="Qt::Checked">
+    <customproperties/>
+    <layer-tree-layer id="radlkarte_wien_orig_0f43d3c4_d4ae_40fe_8e66_87b143f22a05" name="Radlkarte Punkte" patch_size="-1,-1" legend_split_behavior="0" legend_exp="" source="../radlkarte-bruckleitha_v0.3.geojson|geometrytype=Point" providerKey="ogr" expanded="1" checked="Qt::Checked">
+      <customproperties>
+        <property key="cached_name" value="Radlkarte Punkte"/>
+      </customproperties>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" labelsEnabled="0" simplifyLocal="1" simplifyDrawingHints="0" autoRefreshTime="0" maxScale="0" simplifyMaxScale="1" minScale="100000000" geometry="Point" simplifyDrawingTol="1" type="vector" simplifyAlgorithm="0" autoRefreshEnabled="0" readOnly="0" wkbType="Point">
+      <extent>
+        <xmin>16.38355493008999986</xmin>
+        <ymin>47.92901038715999817</ymin>
+        <xmax>17.11386676310999988</xmax>
+        <ymax>48.15746189779000019</ymax>
+      </extent>
+      <id>radlkarte_wien_orig_0f43d3c4_d4ae_40fe_8e66_87b143f22a05</id>
+      <datasource>../radlkarte-bruckleitha_v0.3.geojson|geometrytype=Point</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Radlkarte Punkte</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxz="0" dimensions="2" crs="" minx="0" miny="0" maxx="0" minz="0" maxy="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal endField="" durationField="" fixedDuration="0" mode="0" startField="" endExpression="" startExpression="" accumulate="0" durationUnit="min" enabled="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
+        <rules key="{a1c41ee7-df6c-4901-a761-df150339c379}">
+          <rule symbol="0" key="{0360bf77-5ea3-4e78-8839-14222b643881}" label="Warnung" filter=" &quot;warning&quot; = 'yes'"/>
+          <rule symbol="1" key="{c7265844-21ed-44e5-b256-1b84c67a6b5f}" label="Schiebestelle" filter=" &quot;dismount&quot; = 'yes'"/>
+          <rule symbol="2" key="{a948adbd-195e-4dd8-9e67-ad3896d5763c}" label="untauglich für Spezialräder" filter=" &quot;nocargo&quot; = 'yes'"/>
+          <rule symbol="3" key="{30fa22ed-9761-463b-952f-6d2c8d0102df}" label="Punkte (Sonstige)" filter="ELSE"/>
+        </rules>
+        <symbols>
+          <symbol name="0" alpha="1" clip_to_extent="1" force_rhr="0" type="marker">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""/>
+                <Option name="properties"/>
+                <Option name="type" type="QString" value="collection"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SvgMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option name="angle" type="QString" value="0"/>
+                <Option name="color" type="QString" value="152,125,183,255"/>
+                <Option name="fixedAspectRatio" type="QString" value="0"/>
+                <Option name="horizontal_anchor_point" type="QString" value="1"/>
+                <Option name="name" type="QString" value="https://www.radlkarte.at/css/warning.svg"/>
+                <Option name="offset" type="QString" value="0,0"/>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="offset_unit" type="QString" value="MM"/>
+                <Option name="outline_color" type="QString" value="35,35,35,255"/>
+                <Option name="outline_width" type="QString" value="0"/>
+                <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="outline_width_unit" type="QString" value="MM"/>
+                <Option name="parameters"/>
+                <Option name="scale_method" type="QString" value="diameter"/>
+                <Option name="size" type="QString" value="3"/>
+                <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="size_unit" type="QString" value="MM"/>
+                <Option name="vertical_anchor_point" type="QString" value="1"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="color" v="152,125,183,255"/>
+              <prop k="fixedAspectRatio" v="0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="https://www.radlkarte.at/css/warning.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="parameters" v=""/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="1" alpha="1" clip_to_extent="1" force_rhr="0" type="marker">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""/>
+                <Option name="properties"/>
+                <Option name="type" type="QString" value="collection"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SvgMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option name="angle" type="QString" value="0"/>
+                <Option name="color" type="QString" value="152,125,183,255"/>
+                <Option name="fixedAspectRatio" type="QString" value="0"/>
+                <Option name="horizontal_anchor_point" type="QString" value="1"/>
+                <Option name="name" type="QString" value="https://www.radlkarte.at/css/dismount.svg"/>
+                <Option name="offset" type="QString" value="0,0"/>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="offset_unit" type="QString" value="MM"/>
+                <Option name="outline_color" type="QString" value="35,35,35,255"/>
+                <Option name="outline_width" type="QString" value="0"/>
+                <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="outline_width_unit" type="QString" value="MM"/>
+                <Option name="parameters"/>
+                <Option name="scale_method" type="QString" value="diameter"/>
+                <Option name="size" type="QString" value="3"/>
+                <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="size_unit" type="QString" value="MM"/>
+                <Option name="vertical_anchor_point" type="QString" value="2"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="color" v="152,125,183,255"/>
+              <prop k="fixedAspectRatio" v="0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="https://www.radlkarte.at/css/dismount.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="parameters" v=""/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="2"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="2" alpha="1" clip_to_extent="1" force_rhr="0" type="marker">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""/>
+                <Option name="properties"/>
+                <Option name="type" type="QString" value="collection"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SvgMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option name="angle" type="QString" value="0"/>
+                <Option name="color" type="QString" value="152,125,183,255"/>
+                <Option name="fixedAspectRatio" type="QString" value="0"/>
+                <Option name="horizontal_anchor_point" type="QString" value="1"/>
+                <Option name="name" type="QString" value="https://www.radlkarte.at/css/nocargo.svg"/>
+                <Option name="offset" type="QString" value="0,0"/>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="offset_unit" type="QString" value="MM"/>
+                <Option name="outline_color" type="QString" value="35,35,35,255"/>
+                <Option name="outline_width" type="QString" value="0"/>
+                <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="outline_width_unit" type="QString" value="MM"/>
+                <Option name="parameters"/>
+                <Option name="scale_method" type="QString" value="diameter"/>
+                <Option name="size" type="QString" value="3"/>
+                <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="size_unit" type="QString" value="MM"/>
+                <Option name="vertical_anchor_point" type="QString" value="2"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="color" v="152,125,183,255"/>
+              <prop k="fixedAspectRatio" v="0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="https://www.radlkarte.at/css/nocargo.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="parameters" v=""/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="2"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="3" alpha="1" clip_to_extent="1" force_rhr="0" type="marker">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" type="QString" value=""/>
+                <Option name="properties"/>
+                <Option name="type" type="QString" value="collection"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+              <Option type="Map">
+                <Option name="angle" type="QString" value="0"/>
+                <Option name="color" type="QString" value="254,2,52,255"/>
+                <Option name="horizontal_anchor_point" type="QString" value="1"/>
+                <Option name="joinstyle" type="QString" value="bevel"/>
+                <Option name="name" type="QString" value="circle"/>
+                <Option name="offset" type="QString" value="0,0"/>
+                <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="offset_unit" type="QString" value="MM"/>
+                <Option name="outline_color" type="QString" value="35,35,35,255"/>
+                <Option name="outline_style" type="QString" value="solid"/>
+                <Option name="outline_width" type="QString" value="0"/>
+                <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="outline_width_unit" type="QString" value="MM"/>
+                <Option name="scale_method" type="QString" value="diameter"/>
+                <Option name="size" type="QString" value="3"/>
+                <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                <Option name="size_unit" type="QString" value="MM"/>
+                <Option name="vertical_anchor_point" type="QString" value="1"/>
+              </Option>
+              <prop k="angle" v="0"/>
+              <prop k="color" v="254,2,52,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory minScaleDenominator="0" height="15" backgroundColor="#ffffff" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" lineSizeType="MM" opacity="1" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" penWidth="0" spacing="5" minimumSize="0" backgroundAlpha="255" maxScaleDenominator="1e+08" enabled="0" penAlpha="255" showAxis="1" spacingUnitScale="3x:0,0,0,0,0,0" spacingUnit="MM" sizeType="MM" direction="0" labelPlacementMethod="XHeight" width="15" barWidth="5" diagramOrientation="Up">
+          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" label="" color="#000000"/>
+          <axisSymbol>
+            <symbol name="" alpha="1" clip_to_extent="1" force_rhr="0" type="line">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+                <Option type="Map">
+                  <Option name="align_dash_pattern" type="QString" value="0"/>
+                  <Option name="capstyle" type="QString" value="square"/>
+                  <Option name="customdash" type="QString" value="5;2"/>
+                  <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                  <Option name="customdash_unit" type="QString" value="MM"/>
+                  <Option name="dash_pattern_offset" type="QString" value="0"/>
+                  <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                  <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+                  <Option name="draw_inside_polygon" type="QString" value="0"/>
+                  <Option name="joinstyle" type="QString" value="bevel"/>
+                  <Option name="line_color" type="QString" value="35,35,35,255"/>
+                  <Option name="line_style" type="QString" value="solid"/>
+                  <Option name="line_width" type="QString" value="0.26"/>
+                  <Option name="line_width_unit" type="QString" value="MM"/>
+                  <Option name="offset" type="QString" value="0"/>
+                  <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                  <Option name="offset_unit" type="QString" value="MM"/>
+                  <Option name="ring_filter" type="QString" value="0"/>
+                  <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+                  <Option name="use_custom_dash" type="QString" value="0"/>
+                  <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+                </Option>
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings placement="0" dist="0" zIndex="0" obstacle="0" showAll="1" linePlacementFlags="18" priority="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="description" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="warning" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="priority" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="stress" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="unpaved" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fixme" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="oneway" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dismount" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="steep" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" field="description" index="0"/>
+        <alias name="" field="warning" index="1"/>
+        <alias name="" field="priority" index="2"/>
+        <alias name="" field="stress" index="3"/>
+        <alias name="" field="unpaved" index="4"/>
+        <alias name="" field="fixme" index="5"/>
+        <alias name="" field="oneway" index="6"/>
+        <alias name="" field="dismount" index="7"/>
+        <alias name="" field="steep" index="8"/>
+      </aliases>
+      <defaults>
+        <default expression="" field="description" applyOnUpdate="0"/>
+        <default expression="" field="warning" applyOnUpdate="0"/>
+        <default expression="" field="priority" applyOnUpdate="0"/>
+        <default expression="" field="stress" applyOnUpdate="0"/>
+        <default expression="" field="unpaved" applyOnUpdate="0"/>
+        <default expression="" field="fixme" applyOnUpdate="0"/>
+        <default expression="" field="oneway" applyOnUpdate="0"/>
+        <default expression="" field="dismount" applyOnUpdate="0"/>
+        <default expression="" field="steep" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="description" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="warning" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="priority" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="stress" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="unpaved" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="fixme" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="oneway" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="dismount" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="steep" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="description" exp="" desc=""/>
+        <constraint field="warning" exp="" desc=""/>
+        <constraint field="priority" exp="" desc=""/>
+        <constraint field="stress" exp="" desc=""/>
+        <constraint field="unpaved" exp="" desc=""/>
+        <constraint field="fixme" exp="" desc=""/>
+        <constraint field="oneway" exp="" desc=""/>
+        <constraint field="dismount" exp="" desc=""/>
+        <constraint field="steep" exp="" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns>
+          <column name="stress" hidden="0" width="-1" type="field"/>
+          <column name="priority" hidden="0" width="-1" type="field"/>
+          <column name="fixme" hidden="0" width="-1" type="field"/>
+          <column name="unpaved" hidden="0" width="-1" type="field"/>
+          <column name="description" hidden="0" width="-1" type="field"/>
+          <column name="warning" hidden="0" width="-1" type="field"/>
+          <column name="oneway" hidden="0" width="-1" type="field"/>
+          <column name="dismount" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="description" editable="1"/>
+        <field name="dismount" editable="1"/>
+        <field name="fixme" editable="1"/>
+        <field name="oneway" editable="1"/>
+        <field name="priority" editable="1"/>
+        <field name="stress" editable="1"/>
+        <field name="unpaved" editable="1"/>
+        <field name="warning" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field name="description" labelOnTop="0"/>
+        <field name="dismount" labelOnTop="0"/>
+        <field name="fixme" labelOnTop="0"/>
+        <field name="oneway" labelOnTop="0"/>
+        <field name="priority" labelOnTop="0"/>
+        <field name="stress" labelOnTop="0"/>
+        <field name="unpaved" labelOnTop="0"/>
+        <field name="warning" labelOnTop="0"/>
+      </labelOnTop>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"description"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>
